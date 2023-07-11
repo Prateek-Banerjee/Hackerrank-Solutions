@@ -7,15 +7,17 @@
 #
 def timeConversion(s):
     # Write your code here
-    if (s.find("AM") != -1 and s.find("PM") != -1) or (s.find("am") != -1 and s.find("pm") != -1):
-        if int((s.split(":"))[0]) > 12:
-            print(str(int((s.split(":"))[0])-12)+":"+s.split(":")[1]+":"+s.split(":")[2]+"PM")
-        elif int((s.split(":"))[0]) < 12:
-            print(str((s.split(":"))[0])+":"+s.split(":")[1]+":"+s.split(":")[2]+"AM")
-    elif s.find("PM") != -1:
-        print(str(int((s.split(":"))[0])+12)+":"+s.split(":")[1]+":"+s.split(":")[2][:-2])
-
+    if s.endswith("AM") or s.endswith("am"):
+        if int((s.split(":"))[0]) == 12:
+            print("{:02d}".format(int((s.split(":"))[0])-12)+":"+s.split(":")[1]+":"+s.split(":")[2][:-2])
+        else:
+            print("{:02d}".format(int((s.split(":"))[0]))+":"+s.split(":")[1]+":"+s.split(":")[2][:-2])    
+    elif s.endswith("PM") or s.endswith("pm"):
+        if int((s.split(":"))[0]) == 12:
+            print("{:02d}".format(int((s.split(":"))[0]))+":"+s.split(":")[1]+":"+s.split(":")[2][:-2])    
+        else:    
+            print(str(int((s.split(":"))[0])+12)+":"+s.split(":")[1]+":"+s.split(":")[2][:-2])
+    
 if __name__ == '__main__':
     s = input()
-
     timeConversion(s)
