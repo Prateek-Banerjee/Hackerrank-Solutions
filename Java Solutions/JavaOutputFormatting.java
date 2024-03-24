@@ -14,6 +14,6 @@ public class JavaOutputFormatting {
                 System.out.println(s1 + " ".repeat( 18-( s1.concat("0".repeat(3-lenX)).concat(newX).length() ) ) + "0".repeat(3-lenX) + newX);
             }
             System.out.println("================================");
-
+            sc.close();
     }
 }
