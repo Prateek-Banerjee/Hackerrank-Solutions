@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class JavaAnagrams {
+public class anagrams {
 
     public static boolean anagramCheck(String a, String b) {
         char lowercaseA [] = a.toLowerCase().toCharArray();

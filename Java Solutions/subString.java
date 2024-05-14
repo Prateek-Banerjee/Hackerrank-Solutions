@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class JavaSubString {
+public class subString {
     
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

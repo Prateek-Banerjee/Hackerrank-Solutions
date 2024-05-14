@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Java1DArray {
+public class oneDArray {
 
     public static void main(String[] args) {
 	   

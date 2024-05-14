@@ -1,5 +1,5 @@
 import java.util.*;
-public class JavaIntToString {
+public class intToString {
  public static void main(String[] args) {
 
   try {

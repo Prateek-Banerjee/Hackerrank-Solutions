@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.regex.*;
 
-public class JavaPatternSyntaxChecker
+public class patternSyntaxChecker
 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

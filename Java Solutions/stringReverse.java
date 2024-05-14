@@ -1,5 +1,5 @@
 import java.util.*;
-public class JavaStringReverse {
+public class stringReverse {
     public static void main(String[] args) {
         
         Scanner sc=new Scanner(System.in);

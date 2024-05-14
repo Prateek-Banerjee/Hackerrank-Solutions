@@ -1,6 +1,6 @@
 import java .util.*;
 
-public class JavaStringIntroductions {
+public class stringIntroductions {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String A=sc.next();

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class JavaIfElse {
+public class ifElse {
 
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
